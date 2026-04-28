@@ -11,35 +11,32 @@ const App: React.FC = () => {
         <p className="text-gray-600 text-center mb-8">
           A beautifully designed component with React and Tailwind CSS
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {[1, 2, 3].map((item) => (
-            <div 
+          {[1, 2, 3].map(item => (
+            <div
               key={item}
               className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="text-2xl font-bold mb-2">Feature {item}</div>
               <p className="opacity-90">
-                This is a sample feature description that explains the value of this feature.
+                This is a sample feature description that explains the value of
+                this feature.
               </p>
             </div>
           ))}
         </div>
-        
+
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button 
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
-          >
+          <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
             Get Started
           </button>
-          <button 
-            className="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
-          >
+          <button className="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
             Learn More
           </button>
         </div>
       </div>
-      
+
       <footer className="mt-8 text-center text-gray-600">
         <p>© 2023 React & Tailwind CSS Component</p>
       </footer>
